@@ -146,14 +146,20 @@ $(document).ready(function () {
     initSlickSlider3();
   });
 
-  $(".product-count .btn-minus").addClass("btn-disabled");
+  // $(".product-count .btn-minus").addClass("btn-disabled");
 
   $(".product-count .input-number").on("change", function () {
-    if ($(this).val() == 1) {
+    if ($(this).val() == 0) {
       $(this)
         .closest(".product-count")
         .find(".btn-minus")
         .addClass("btn-disabled");
+      $(this).closest(".product-count").addClass("hide");
+      $(this).closest(".product-count").removeClass("show");
+      $(this)
+        .closest(".basket-btn-wrap")
+        .find(".basket-btn")
+        .removeClass("hide");
     } else {
       $(this)
         .closest(".product-count")
@@ -170,7 +176,7 @@ $(document).ready(function () {
     $(this)
       .closest(".product-count")
       .find(".input-number")
-      .val(number > 0 ? number : 1)
+      .val(number > 0 ? number : 0)
       .change();
   });
 
@@ -187,7 +193,7 @@ $(document).ready(function () {
   });
 
   $(".basket-btn").on("click", function () {
-    $(this).hide();
+    $(this).addClass("hide");
     $(this).closest(".basket-btn-wrap").find(".product-count").addClass("show");
   });
 });

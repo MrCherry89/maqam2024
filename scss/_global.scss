@@ -112,6 +112,9 @@ a {
   background: #4ebb5f;
   border-radius: 5px;
   display: none;
+  &.hide {
+    display: none;
+  }
   &.show {
     @include flex;
   }

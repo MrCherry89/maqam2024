@@ -377,9 +377,24 @@
       border-radius: 5px;
       background: #2b2a29;
       min-width: 130px;
+      &.hide {
+        display: none;
+      }
       &:hover {
         background: $red;
       }
+    }
+  }
+  .income-text {
+    color: #878787;
+    font-size: 14px;
+    margin-top: 10px;
+    @include flex;
+    @include align-center;
+    span {
+      color: $red;
+      margin-left: 5px;
+      margin-bottom: 0;
     }
   }
 }

@@ -132,6 +132,9 @@ a:focus {
   border-radius: 5px;
   display: none;
 }
+.product-count.hide {
+  display: none;
+}
 .product-count.show {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,8 +990,27 @@ a:focus {
   background: #2b2a29;
   min-width: 130px;
 }
+.goods-item .basket-btn-wrap .basket-btn.hide {
+  display: none;
+}
 .goods-item .basket-btn-wrap .basket-btn:hover {
   background: #ea5448;
+}
+.goods-item .income-text {
+  color: #878787;
+  font-size: 14px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.goods-item .income-text span {
+  color: #ea5448;
+  margin-left: 5px;
+  margin-bottom: 0;
 }
 
 .home-info {
