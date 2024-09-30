@@ -2431,6 +2431,9 @@ a:focus {
 .input-wrap {
   margin-bottom: 15px;
 }
+.input-wrap .select-wrap .select2-selection__rendered {
+  border-radius: 6px !important;
+}
 .input-wrap input {
   height: 52px;
   width: 100%;
