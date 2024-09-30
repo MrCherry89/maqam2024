@@ -18,6 +18,10 @@ $(document).ready(function () {
     ],
   });
 
+  $(".phone-number-input").inputmask({
+    mask: "+7 (999)-999-999-9",
+  });
+
   $(".select-wrap select").select2({
     minimumResultsForSearch: 6,
   });
@@ -39,6 +43,11 @@ $(document).ready(function () {
   $(document).on("click", function () {
     $(".catalog-menu").removeClass("open");
     $(".catalog-btn .arrow").removeClass("rotate");
+  });
+
+  $(".subscriptions-table-items .show").on("click", function () {
+    $(".subscriptions-table-item").removeClass("hide");
+    $(this).hide();
   });
 
   function initSlickSlider2() {

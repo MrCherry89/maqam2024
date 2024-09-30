@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru" class="fixed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Maqam</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo-wrap">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <div class="selects">
+            <div class="select-wrap">
+              <img src="img/select-icon1.svg" alt="" />
+              <select>
+                <option value="1">Kaz</option>
+                <option value="2">Rus</option>
+              </select>
+            </div>
+            <div class="select-wrap">
+              <img src="img/select-icon2.svg" alt="" />
+              <select>
+                <option value="1">Астана</option>
+                <option value="2">Москва</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="header-info">
+          <div class="catalog-button">
+            <button class="catalog-btn" type="button">
+              <div class="icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.1535 3.80711e-05C1.87233 -0.000230234 1.62996 -0.000461611 1.41524 0.05109C0.740204 0.213144 0.213144 0.740204 0.05109 1.41524C-0.000461611 1.62996 -0.000230234 1.87233 3.80711e-05 2.1535V5.23121C-0.000230234 5.51237 -0.000461611 5.75476 0.05109 5.96947C0.213144 6.6445 0.740204 7.17156 1.41524 7.33363C1.62996 7.38517 1.87233 7.38494 2.1535 7.38467H5.23121C5.51237 7.38494 5.75476 7.38517 5.96947 7.33363C6.6445 7.17156 7.17156 6.6445 7.33363 5.96947C7.38517 5.75476 7.38494 5.51237 7.38467 5.23121V2.1535C7.38494 1.87233 7.38517 1.62996 7.33363 1.41524C7.17156 0.740204 6.6445 0.213144 5.96947 0.05109C5.75476 -0.000461611 5.51237 -0.000230234 5.23121 3.80711e-05H2.1535ZM1.70256 1.24784C1.75553 1.23512 1.83664 1.23083 2.21544 1.23083H5.16926C5.54808 1.23083 5.62919 1.23512 5.68215 1.24784C5.90717 1.30186 6.08284 1.47754 6.13687 1.70256C6.14959 1.75553 6.15387 1.83664 6.15387 2.21544V5.16926C6.15387 5.54808 6.14959 5.62919 6.13687 5.68215C6.08284 5.90717 5.90717 6.08284 5.68215 6.13687C5.62919 6.14959 5.54808 6.15387 5.16926 6.15387H2.21544C1.83664 6.15387 1.75553 6.14959 1.70256 6.13687C1.47754 6.08284 1.30186 5.90717 1.24784 5.68215C1.23512 5.62919 1.23083 5.54808 1.23083 5.16926V2.21544C1.23083 1.83664 1.23512 1.75553 1.24784 1.70256C1.30186 1.47754 1.47754 1.30186 1.70256 1.24784ZM10.7688 3.80711e-05C10.4876 -0.000230234 10.2453 -0.000461611 10.0306 0.05109C9.35552 0.213144 8.82846 0.740204 8.6664 1.41524C8.61485 1.62996 8.61508 1.87233 8.61535 2.1535V5.23121C8.61508 5.51237 8.61485 5.75476 8.6664 5.96947C8.82846 6.6445 9.35552 7.17156 10.0306 7.33363C10.2453 7.38517 10.4876 7.38494 10.7688 7.38467H13.8465C14.1277 7.38494 14.37 7.38517 14.5848 7.33363C15.2598 7.17156 15.7869 6.6445 15.949 5.96947C16.0004 5.75476 16.0003 5.51237 15.9999 5.23121V2.1535C16.0003 1.87233 16.0004 1.62996 15.949 1.41524C15.7869 0.740204 15.2598 0.213144 14.5848 0.05109C14.37 -0.000461611 14.1277 -0.000230234 13.8465 3.80711e-05H10.7688ZM10.3179 1.24784C10.3708 1.23512 10.452 1.23083 10.8308 1.23083H13.7846C14.1634 1.23083 14.2445 1.23512 14.2974 1.24784C14.5224 1.30186 14.6982 1.47754 14.7522 1.70256C14.7649 1.75553 14.7692 1.83664 14.7692 2.21544V5.16926C14.7692 5.54808 14.7649 5.62919 14.7522 5.68215C14.6982 5.90717 14.5224 6.08284 14.2974 6.13687C14.2445 6.14959 14.1634 6.15387 13.7846 6.15387H10.8308C10.452 6.15387 10.3708 6.14959 10.3179 6.13687C10.0929 6.08284 9.91717 5.90717 9.86316 5.68215C9.85043 5.62919 9.84615 5.54808 9.84615 5.16926V2.21544C9.84615 1.83664 9.85043 1.75553 9.86316 1.70256C9.91717 1.47754 10.0929 1.30186 10.3179 1.24784ZM2.1535 8.61535H5.23121C5.51237 8.61508 5.75476 8.61485 5.96947 8.6664C6.6445 8.82846 7.17156 9.35552 7.33363 10.0306C7.38517 10.2453 7.38494 10.4876 7.38467 10.7688V13.8465C7.38494 14.1277 7.38517 14.37 7.33363 14.5848C7.17156 15.2598 6.6445 15.7869 5.96947 15.949C5.75476 16.0004 5.51237 16.0003 5.23121 15.9999H2.1535C1.87233 16.0003 1.62996 16.0004 1.41524 15.949C0.740204 15.7869 0.213144 15.2598 0.05109 14.5848C-0.000461611 14.37 -0.000230234 14.1277 3.80711e-05 13.8465V10.7688C-0.000230234 10.4876 -0.000461611 10.2453 0.05109 10.0306C0.213144 9.35552 0.740204 8.82846 1.41524 8.6664C1.62996 8.61485 1.87233 8.61508 2.1535 8.61535ZM2.21544 9.84615C1.83664 9.84615 1.75553 9.85043 1.70256 9.86316C1.47754 9.91717 1.30186 10.0929 1.24784 10.3179C1.23512 10.3708 1.23083 10.452 1.23083 10.8308V13.7846C1.23083 14.1634 1.23512 14.2445 1.24784 14.2974C1.30186 14.5224 1.47754 14.6982 1.70256 14.7522C1.75553 14.7649 1.83664 14.7692 2.21544 14.7692H5.16926C5.54808 14.7692 5.62919 14.7649 5.68215 14.7522C5.90717 14.6982 6.08284 14.5224 6.13687 14.2974C6.14959 14.2445 6.15387 14.1634 6.15387 13.7846V10.8308C6.15387 10.452 6.14959 10.3708 6.13687 10.3179C6.08284 10.0929 5.90717 9.91717 5.68215 9.86316C5.62919 9.85043 5.54808 9.84615 5.16926 9.84615H2.21544ZM10.7688 8.61535C10.4876 8.61508 10.2453 8.61485 10.0306 8.6664C9.35552 8.82846 8.82846 9.35552 8.6664 10.0306C8.61485 10.2453 8.61508 10.4876 8.61535 10.7688V13.8465C8.61508 14.1277 8.61485 14.37 8.6664 14.5848C8.82846 15.2598 9.35552 15.7869 10.0306 15.949C10.2453 16.0004 10.4876 16.0003 10.7688 15.9999H13.8465C14.1277 16.0003 14.37 16.0004 14.5848 15.949C15.2598 15.7869 15.7869 15.2598 15.949 14.5848C16.0004 14.37 16.0003 14.1277 15.9999 13.8465V10.7688C16.0003 10.4876 16.0004 10.2453 15.949 10.0306C15.7869 9.35552 15.2598 8.82846 14.5848 8.6664C14.37 8.61485 14.1277 8.61508 13.8465 8.61535H10.7688ZM10.3179 9.86316C10.3708 9.85043 10.452 9.84615 10.8308 9.84615H13.7846C14.1634 9.84615 14.2445 9.85043 14.2974 9.86316C14.5224 9.91717 14.6982 10.0929 14.7522 10.3179C14.7649 10.3708 14.7692 10.452 14.7692 10.8308V13.7846C14.7692 14.1634 14.7649 14.2445 14.7522 14.2974C14.6982 14.5224 14.5224 14.6982 14.2974 14.7522C14.2445 14.7649 14.1634 14.7692 13.7846 14.7692H10.8308C10.452 14.7692 10.3708 14.7649 10.3179 14.7522C10.0929 14.6982 9.91717 14.5224 9.86316 14.2974C9.85043 14.2445 9.84615 14.1634 9.84615 13.7846V10.8308C9.84615 10.452 9.85043 10.3708 9.86316 10.3179C9.91717 10.0929 10.0929 9.91717 10.3179 9.86316Z"
+                  />
+                </svg>
+              </div>
+              <span>Каталог</span>
+              <img src="img/arr-down.svg" alt="" class="arrow" />
+            </button>
+            <div class="catalog-menu">
+              <div class="links-wrap">
+                <a href="#">
+                  <span>Косметика</span>
+                  <img src="img/links-img1.png" alt="" />
+                </a>
+                <a href="#" class="active">
+                  <span
+                    >ЭКО продукты <br />
+                    питания</span
+                  >
+                  <img src="img/links-img2.png" alt="" />
+                </a>
+                <a href="#">
+                  <span>Бьюти гаджеты</span>
+                  <img src="img/links-img3.png" alt="" />
+                </a>
+                <a href="#">
+                  <span>БАДы</span>
+                  <img src="img/links-img4.png" alt="" />
+                </a>
+                <a href="#">
+                  <span
+                    >ЭКО товары <br />
+                    для дома</span
+                  >
+                  <img src="img/links-img5.png" alt="" />
+                </a>
+                <a href="#">
+                  <span
+                    >Подгузники <br />
+                    для детей</span
+                  >
+                  <img src="img/links-img6.png" alt="" />
+                </a>
+                <a href="#">
+                  <span
+                    >Спортивное <br />
+                    питание</span
+                  >
+                  <img src="img/links-img7.png" alt="" />
+                </a>
+                <a href="#">
+                  <span
+                    >Детское <br />
+                    питание</span
+                  >
+                  <img src="img/links-img8.png" alt="" />
+                </a>
+                <a href="#">
+                  <span
+                    >Гигиена для <br />
+                    тела</span
+                  >
+                  <img src="img/links-img9.png" alt="" />
+                </a>
+              </div>
+              <div class="menu-wrap">
+                <div class="info">
+                  <h4>Основные</h4>
+                  <ul>
+                    <li><a href="#">Питьевые напитки</a></li>
+                    <li><a href="#">Овощи</a></li>
+                    <li><a href="#">Фрукты</a></li>
+                    <li><a href="#">Батончики</a></li>
+                    <li><a href="#">Смузи и йогурты</a></li>
+                    <li><a href="#">Снэки</a></li>
+                    <li><a href="#">Витамины</a></li>
+                    <li><a href="#">Травяные чаи</a></li>
+                    <li><a href="#">Эко кофе</a></li>
+                    <li><a href="#">Шоколад </a></li>
+                    <li><a href="#">Мороженое</a></li>
+                  </ul>
+                </div>
+                <div class="info info2">
+                  <h4>Дополнительно</h4>
+                  <ul>
+                    <li><a href="#">Молочная продукция</a></li>
+                    <li><a href="#">Пуэр</a></li>
+                    <li><a href="#">чаи</a></li>
+                    <li><a href="#">Мед </a></li>
+                    <li><a href="#">Другое</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search">
+            <form>
+              <button type="button">
+                <img src="img/search-icon.svg" alt="" />
+              </button>
+              <input type="text" placeholder="Найти на Maqam..." />
+            </form>
+          </div>
+          <div class="sign-in-wrap">
+            <a href="#" class="siign-in"
+              ><img src="img/sign-in-icon.svg" alt="" /> Войти
+            </a>
+            <div class="basket-link">
+              <span class="current">1</span>
+              <img src="img/basket-icon.svg" alt="" />
+              Корзина
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="cabinet-wrapper">
+      <div class="wrapper">
+        <div class="top">
+          <div class="title-wrap">
+            <h2>Кабинет</h2>
+            <span>/ покупателя</span>
+          </div>
+          <div class="links">
+            <a href="#">Данные</a>
+            <a href="#" class="active">Заказы</a>
+            <a href="#">Избранное</a>
+            <a href="#">Подписки</a>
+          </div>
+        </div>
+        <div class="table-top-title">
+          <form>
+            <button type="button">
+              <img src="img/search-icon.svg" alt="" />
+            </button>
+            <input type="text" placeholder="Поиск по номеру заказа.." />
+          </form>
+          <div class="selects">
+            <div class="select-wrap style2">
+              <select>
+                <option value="1">Имеются товары экспертов</option>
+                <option value="2">Имеются товары экспертов 2</option>
+                <option value="3">Имеются товары экспертов 3</option>
+              </select>
+            </div>
+            <div class="select-wrap style2">
+              <select>
+                <option value="1">За последний месяц</option>
+                <option value="2">За последний год</option>
+                <option value="3">За последний месяц</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="subscriptions-table-items">
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status">В обработке</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status">В сборке</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item hide">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="subscriptions-table-item hide">
+            <b class="numbers">348593</b>
+            <p class="dates">
+              <span class="date">12.05.2024</span> /
+              <span class="time">13:05</span>
+            </p>
+            <span class="status green">Завершен</span>
+            <p class="bought no-grow"><b>4</b> товаров</p>
+            <div class="price">2 152 ₸</div>
+            <button class="delete" type="button">
+              <img src="img/delete-icon.svg" alt="" />
+            </button>
+          </div>
+          <button type="button" class="show">
+            Показать еще 6 шт. <img src="img/grey-arr.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="info">
+          <div class="top">
+            <a href="index.html" class="footer-logo">
+              <img src="img/footer-logo.svg" alt="" />
+            </a>
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <svg
+                    width="18"
+                    height="15"
+                    viewBox="0 0 18 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.8352 1.36528L15.136 14.0946C14.9322 14.9928 14.4013 15.2164 13.6468 14.7935L9.53386 11.7627L7.54956 13.6716C7.32979 13.8914 7.14644 14.0748 6.72288 14.0748L7.01867 9.8864L14.6409 2.99885C14.9725 2.70369 14.5687 2.53951 14.126 2.8353L4.7028 8.76903L0.646039 7.49898C-0.236227 7.22363 -0.252198 6.61671 0.830031 6.19315L16.6974 0.0798958C17.4321 -0.195453 18.0748 0.242805 17.8352 1.36528Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9364 0H4.65144C1.92144 0 0.293945 1.6275 0.293945 4.3575V10.635C0.293945 13.3725 1.92144 15 4.65144 15H10.9289C13.6589 15 15.2864 13.3725 15.2864 10.6425V4.3575C15.2939 1.6275 13.6664 0 10.9364 0ZM7.79394 10.41C6.18894 10.41 4.88394 9.105 4.88394 7.5C4.88394 5.895 6.18894 4.59 7.79394 4.59C9.39894 4.59 10.7039 5.895 10.7039 7.5C10.7039 9.105 9.39894 10.41 7.79394 10.41ZM12.2339 3.66C12.1964 3.75 12.1439 3.8325 12.0764 3.9075C12.0014 3.975 11.9189 4.0275 11.8289 4.065C11.7389 4.1025 11.6414 4.125 11.5439 4.125C11.3414 4.125 11.1539 4.05 11.0114 3.9075C10.9439 3.8325 10.8914 3.75 10.8539 3.66C10.8164 3.57 10.7939 3.4725 10.7939 3.375C10.7939 3.2775 10.8164 3.18 10.8539 3.09C10.8914 2.9925 10.9439 2.9175 11.0114 2.8425C11.1839 2.67 11.4464 2.5875 11.6864 2.64C11.7389 2.6475 11.7839 2.6625 11.8289 2.685C11.8739 2.7 11.9189 2.7225 11.9639 2.7525C12.0014 2.775 12.0389 2.8125 12.0764 2.8425C12.1439 2.9175 12.1964 2.9925 12.2339 3.09C12.2714 3.18 12.2939 3.2775 12.2939 3.375C12.2939 3.4725 12.2714 3.57 12.2339 3.66Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="11"
+                    height="15"
+                    viewBox="0 0 11 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.204 3.8117C7.553 3.48825 8.09325 3.5235 8.13291 3.52527L10.3935 3.52438L10.4428 0.262633L10.1018 0.178906C9.8832 0.125156 9.21428 0 7.73984 0C5.1144 0 3.35 1.83755 3.35 4.57138V5.30552H0.706055V8.83079H3.35V15H6.87527V8.83078H9.66199L10.1467 5.30552H6.87527V4.76527C6.87527 4.33608 6.98631 4.0144 7.204 3.8117Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">
+            Маркетплейс косметики и спортивного питания. Все права защищены
+            &copy; 2024
+          </p>
+        </div>
+        <div class="links">
+          <a href="#">О маркетплейсе</a>
+          <a href="#">Информация для экспертов</a>
+          <a href="#">Для покупателей</a>
+          <a href="#">Контактные данные</a>
+        </div>
+        <div class="links">
+          <a href="#">Каталог продукции</a>
+          <a href="#">Возврат товара</a>
+          <a href="#">Договор оферты</a>
+          <a href="#">Поставщикам</a>
+        </div>
+        <div class="texts">
+          <p>
+            Любая информация, представленная на данном сайте, носит
+            исключительно информационный характер и ни при каких условиях не
+            является публичной офертой, определяемой положением статьи 437 ГК
+            РФ. Отправляя сведения через любую электронную форму на этом сайте,
+            вы даёте согласие на обработку ваших персональных данных.
+          </p>
+          <a href="#" class="private-policy">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
