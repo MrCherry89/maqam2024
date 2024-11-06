@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -523,224 +524,197 @@
 
     <div class="cabinet-wrapper">
       <div class="wrapper">
-        <div class="top">
+        <div class="top style2">
           <div class="title-wrap">
             <h2>Кабинет</h2>
-            <span>/ покупателя</span>
+            <span>/ поставщика</span>
           </div>
           <div class="links">
             <a href="#">Данные</a>
-            <a href="#">Заказы</a>
-            <a href="#" class="active">Избранное</a>
-            <a href="#">Подписки</a>
+            <a href="#" class="active">Товары</a>
+            <a href="#">Эксперты</a>
+            <a href="#">Финансы</a>
+          </div>
+          <div class="balance">
+            Добавить товар
+            <img src="img/down-white-arr.svg" alt="" />
           </div>
         </div>
-        <div class="featured-items">
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
-              </div>
-              <a href="#" class="img">
-                <img src="img/goods-img1.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
-              </div>
-            </div>
+        <div class="expert-verification">
+          <div class="title-wrap">
+            <h3>Добавление нового товара</h3>
           </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
+          <form class="expert-verification-form">
+            <div class="left">
+              <div class="input-wrap mb20">
+                <span>Название товара</span>
+                <div class="select-wrap style3">
+                  <select class="product-selector" style="width: 100%">
+                    <option
+                      value="Крем для лица Аврора 80 мл"
+                      data-action="apply"
+                    >
+                      Выберите товар
+                    </option>
+                    <option
+                      value="Крем для лица Аврора 70 мл"
+                      data-action="apply"
+                    >
+                      Крем для лица Аврора 70 мл
+                    </option>
+                    <option
+                      value="Крем для лица Аврора 30 мл"
+                      data-action="apply"
+                    >
+                      Крем для лица Аврора 30 мл
+                    </option>
+                  </select>
+                </div>
               </div>
-              <a href="#" class="img">
-                <img src="img/goods-img2.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
+              <div class="input-wrap mb20">
+                <span>Категория товара</span>
+                <a href="#categories-popup" class="categories-btn popup"
+                  >Выберите категорию <img src="img/black-arrow.svg" alt=""
+                /></a>
               </div>
-            </div>
-          </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
+              <div class="input-wrap mb20">
+                <span>Бренд</span>
+                <div class="select-wrap style3">
+                  <select>
+                    <option value="1">Выберите бренд</option>
+                    <option value="2">Выберите бренд 2</option>
+                  </select>
+                </div>
               </div>
-              <a href="#" class="img">
-                <img src="img/goods-img3.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
+              <div class="inputs-wrap">
+                <div class="input-wrap">
+                  <span>Цена товара</span>
+                  <input type="text" placeholder="0,00 тг" />
+                </div>
+                <div class="input-wrap">
+                  <span>Скидка</span>
+                  <input type="text" placeholder="0%" />
+                </div>
+                <div class="input-wrap">
+                  <span>Количество</span>
+                  <input type="text" placeholder="35 шт." />
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
+              <div class="input-wrap mb20">
+                <span>Состав товара (через запятые)</span>
+                <textarea placeholder="Опишите состав товара "></textarea>
               </div>
-              <a href="#" class="img">
-                <img src="img/goods-img4.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
+              <div class="input-wrap mb20">
+                <span>Описание товара</span>
+                <textarea placeholder="Опишите состав товара "></textarea>
               </div>
-            </div>
-          </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
+              <div class="characteristics">
+                <div class="info">
+                  <h4>Тип кожи</h4>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      для всех типов кожи
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      для зрелой кожи
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      для комбинированной кожи
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      для проблемной кожи
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      для сухой кожи
+                    </label>
+                  </div>
+                </div>
+                <div class="info">
+                  <h4>Особенности</h4>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      пункт первый
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      пункт второй
+                    </label>
+                  </div>
+                  <div class="checkbox-wrap">
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                      пункт третий
+                    </label>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="img">
-                <img src="img/goods-img5.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
+              <div class="checkbox-wrap">
+                <label>
+                  <input type="checkbox" checked />
+                  <span></span>
+                  Опубликовать товар
+                </label>
+              </div>
+              <div class="buttons">
+                <button class="send" type="button">
+                  Отправить на модерацию
+                  <img src="img/white-arr-right.svg" alt="" />
+                </button>
+                <a href="#" class="close">Отменить</a>
               </div>
             </div>
-          </div>
+            <div class="right">
+              <span class="title"
+                >Добавьте фотографии - до 10 штук (jpg, png)</span
+              >
+              <div class="files style2">
+                <div class="file-wrap">
+                  <input type="file" />
+                  <img src="img/add-icon.svg" alt="" />
+                </div>
+                <div class="file-wrap">
+                  <input type="file" />
+                  <img src="img/add-icon.svg" alt="" />
+                </div>
+                <div class="file-wrap">
+                  <input type="file" />
+                  <img src="img/add-icon.svg" alt="" />
+                </div>
+                <div class="file-wrap">
+                  <input type="file" />
+                  <img src="img/add-icon.svg" alt="" />
+                </div>
+                <div class="file-wrap">
+                  <input type="file" />
+                  <img src="img/add-icon.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -840,5 +814,80 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
+
+    <div id="categories-popup" class="mfp-hide white-popup mfp-with-anim">
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="info">
+          <h2>Выберите категорию <span> / и подкатегории</span></h2>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="div1">
+                <div class="top">
+                  <span>Красота</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </div>
+              </div>
+              <div class="div2">
+                <div class="top">
+                  <span>Уход за лицом</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </div>
+                <div class="top">
+                  <span>Уход зе телом</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </div>
+                <div class="top">
+                  <span>Крема</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </div>
+                <div class="top">
+                  <span>Лосьоны</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </div>
+                <div class="top">
+                  <span>Маски</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </div>
+              </div>
+              <div class="div3">
+                <a href="#" class="top">
+                  <span>Крема для век</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+                <a href="#" class="top">
+                  <span>Крема для лица</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+                <a href="#" class="top">
+                  <span>Крема для шеи</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+                <a href="#" class="top">
+                  <span>Крема универсальные</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+                <a href="#" class="top">
+                  <span>Крема для тела</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+                <a href="#" class="top">
+                  <span>Крема для ног</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+                <a href="#" class="top">
+                  <span>Крема для лица новинки</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+                <a href="#" class="top">
+                  <span>Крема новые</span>
+                  <img src="img/black-arrow.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

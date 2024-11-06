@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru" class="fixed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Maqam</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="login-wrap">
+      <a href="index.html" class="logo">
+        <img src="img/logo-black.svg" alt="" />
+      </a>
+      <div class="radios">
+        <div class="radio-wrap">
+          <input type="radio" id="radio1" name="checkbox" checked />
+          <label for="radio1">
+            <span></span>
+            KAZ
+          </label>
+        </div>
+        <div class="radio-wrap">
+          <input type="radio" id="radio2" name="checkbox" />
+          <label for="radio2">
+            <span></span>
+            RUS
+          </label>
+        </div>
+      </div>
+      <h2>Регистрация</h2>
+      <div class="links">
+        <a href="#">
+          <img src="img/login-icon1.svg" alt="" />
+          Покупатель
+        </a>
+        <a href="#" class="active">
+          <img src="img/login-icon2.svg" alt="" />
+          Эксперт
+        </a>
+        <a href="#">
+          <img src="img/login-icon3.svg" alt="" />
+          Поставщик
+        </a>
+      </div>
+      <form class="registration-expert-form" id="registration-expert-form">
+        <div class="all-inputs">
+          <div class="select">
+            <select>
+              <option value="1">ИП</option>
+              <option value="2">Физ. лицо</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Банк" />
+          <input type="text" placeholder="ФИО" />
+          <div class="inputs">
+            <input type="text" placeholder="БИК" />
+            <input type="text" placeholder="ИНН" />
+          </div>
+          <input type="text" placeholder="БИН" />
+          <input type="text" placeholder="Расчетный счет" />
+          <input type="text" placeholder="Юридический адрес" />
+          <input type="text" placeholder="Фактический адрес" />
+        </div>
+        <div class="gpx-inputs style2">
+          <div class="input-wrap">
+            <span>Скачайте договор и заполните его</span>
+            <a href="#" download="" class="download"
+              ><img src="img/download-icon.svg" alt="" /> Скачать шаблон
+              договора для ГПХ</a
+            >
+          </div>
+          <div class="input-wrap">
+            <span>Загрузка документа</span>
+            <div class="file-input">
+              <input type="file" />
+              <img src="img/add-icon.svg" alt="" />
+              <span>Загрузить договор для ГПХ</span>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-wrap">
+          <label>
+            <input type="checkbox" checked />
+            <span></span>
+            Являюсь налогоплательщиком НДС
+          </label>
+        </div>
+        <div class="checkbox-wrap">
+          <label>
+            <input type="checkbox" checked />
+            <span></span>
+            Соглашаюсь с правилами пользования торговой площадкой
+          </label>
+        </div>
+        <button type="submit">
+          Сохранить <img src="img/white-arr-right.svg" alt="" />
+        </button>
+        <a href="#" class="registration-link">Пропустить</a>
+      </form>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -523,222 +523,181 @@
 
     <div class="cabinet-wrapper">
       <div class="wrapper">
-        <div class="top">
+        <div class="top style2">
           <div class="title-wrap">
             <h2>Кабинет</h2>
-            <span>/ покупателя</span>
+            <span>/ эксперта</span>
           </div>
           <div class="links">
             <a href="#">Данные</a>
-            <a href="#">Заказы</a>
-            <a href="#" class="active">Избранное</a>
-            <a href="#">Подписки</a>
+            <a href="#" class="active">Корзины</a>
+            <a href="#">Финансы</a>
+          </div>
+          <div class="balance">
+            Баланс: 345 ₸
+            <img src="img/down-white-arr.svg" alt="" />
           </div>
         </div>
-        <div class="featured-items">
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
-              </div>
-              <a href="#" class="img">
-                <img src="img/goods-img1.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
-              </div>
+        <div class="table-top-title">
+          <form>
+            <button type="button">
+              <img src="img/search-icon.svg" alt="" />
+            </button>
+            <input type="text" placeholder="Поиск по названию.." />
+          </form>
+          <div class="selects">
+            <div class="select-wrap style2">
+              <select>
+                <option value="1">За последнюю неделю</option>
+                <option value="2">За последний год</option>
+                <option value="3">За последний месяц</option>
+              </select>
             </div>
           </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
+        </div>
+        <div class="basket-table">
+          <div class="table-top">
+            <span style="width: 7%">№</span>
+            <span style="width: 22%">Наименование корзины</span>
+            <span style="width: 12%">Дата создания</span>
+            <span style="width: 10%">Товаров</span>
+            <span style="width: 10%">Итого</span>
+            <span style="width: 10%">Ваш доход</span>
+            <span style="width: 29%">Действия</span>
+          </div>
+          <div class="table-item">
+            <span style="width: 7%">01</span>
+            <span style="width: 22%">Комплекс для уходу за кожей</span>
+            <span style="width: 12%">12.05.2024</span>
+            <span style="width: 10%">4</span>
+            <span style="width: 10%">2 152 ₸</span>
+            <span class="green" style="width: 10%">+152 ₸ </span>
+            <div class="buttons" style="width: 29%">
+              <a href="#" class="basket-btn">В корзину</a>
+              <a href="#" class="read"
+                >Редактировать <img src="img/white-arr-right.svg" alt=""
+              /></a>
+              <div class="share">
+                <div class="share-btn">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.76923 7.38461C7.95231 7.38461 7.23923 7.81154 6.82892 8.4517L4.35739 7.03939C4.51708 6.72554 4.61539 6.37569 4.61539 6C4.61539 5.76785 4.57062 5.54815 4.50693 5.33676L7.07815 3.86769C7.49954 4.32462 8.09862 4.61538 8.76923 4.61538C10.044 4.61538 11.0769 3.58246 11.0769 2.30769C11.0769 1.03292 10.044 0 8.76923 0C7.49446 0 6.46154 1.03292 6.46154 2.30769C6.46154 2.53985 6.5063 2.75953 6.56999 2.97138L3.99877 4.44C3.57739 3.98354 2.97831 3.69231 2.30769 3.69231C1.03292 3.69231 0 4.72523 0 6C0 7.27477 1.03292 8.30769 2.30769 8.30769C2.83385 8.30769 3.31338 8.12491 3.70153 7.8286L6.48692 9.44309C6.47769 9.52616 6.46154 9.60646 6.46154 9.69231C6.46154 10.9671 7.49446 12 8.76923 12C10.044 12 11.0769 10.9671 11.0769 9.69231C11.0769 8.41754 10.044 7.38461 8.76923 7.38461Z"
+                    />
+                  </svg>
+                </div>
+                <div class="share-content">
+                  <p>Поделиться в социальных сетях</p>
+                  <a href="#">
+                    <img src="img/ic2.svg" alt="" />
+                    <span>Instagram</span>
+                  </a>
+                  <a href="#">
+                    <img src="img/ic3.svg" alt="" />
+                    <span>Youtube</span>
+                  </a>
+                </div>
               </div>
-              <a href="#" class="img">
-                <img src="img/goods-img2.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
-              </div>
+              <a href="#" class="delete"
+                ><img src="img/delete-icon.svg" alt=""
+              /></a>
             </div>
           </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
+          <div class="table-item">
+            <span style="width: 7%">01</span>
+            <span style="width: 22%">Комплекс для уходу за кожей</span>
+            <span style="width: 12%">12.05.2024</span>
+            <span style="width: 10%">4</span>
+            <span style="width: 10%">2 152 ₸</span>
+            <span class="green" style="width: 10%">+152 ₸ </span>
+            <div class="buttons" style="width: 29%">
+              <a href="#" class="basket-btn">В корзину</a>
+              <a href="#" class="read"
+                >Редактировать <img src="img/white-arr-right.svg" alt=""
+              /></a>
+              <div class="share">
+                <div class="share-btn">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.76923 7.38461C7.95231 7.38461 7.23923 7.81154 6.82892 8.4517L4.35739 7.03939C4.51708 6.72554 4.61539 6.37569 4.61539 6C4.61539 5.76785 4.57062 5.54815 4.50693 5.33676L7.07815 3.86769C7.49954 4.32462 8.09862 4.61538 8.76923 4.61538C10.044 4.61538 11.0769 3.58246 11.0769 2.30769C11.0769 1.03292 10.044 0 8.76923 0C7.49446 0 6.46154 1.03292 6.46154 2.30769C6.46154 2.53985 6.5063 2.75953 6.56999 2.97138L3.99877 4.44C3.57739 3.98354 2.97831 3.69231 2.30769 3.69231C1.03292 3.69231 0 4.72523 0 6C0 7.27477 1.03292 8.30769 2.30769 8.30769C2.83385 8.30769 3.31338 8.12491 3.70153 7.8286L6.48692 9.44309C6.47769 9.52616 6.46154 9.60646 6.46154 9.69231C6.46154 10.9671 7.49446 12 8.76923 12C10.044 12 11.0769 10.9671 11.0769 9.69231C11.0769 8.41754 10.044 7.38461 8.76923 7.38461Z"
+                    />
+                  </svg>
+                </div>
+                <div class="share-content">
+                  <p>Поделиться в социальных сетях</p>
+                  <a href="#">
+                    <img src="img/ic2.svg" alt="" />
+                    <span>Instagram</span>
+                  </a>
+                  <a href="#">
+                    <img src="img/ic3.svg" alt="" />
+                    <span>Youtube</span>
+                  </a>
+                </div>
               </div>
-              <a href="#" class="img">
-                <img src="img/goods-img3.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
-              </div>
+              <a href="#" class="delete"
+                ><img src="img/delete-icon.svg" alt=""
+              /></a>
             </div>
           </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
+          <div class="table-item">
+            <span style="width: 7%">01</span>
+            <span style="width: 22%">Комплекс для уходу за кожей</span>
+            <span style="width: 12%">12.05.2024</span>
+            <span style="width: 10%">4</span>
+            <span style="width: 10%">2 152 ₸</span>
+            <span class="green" style="width: 10%">+152 ₸ </span>
+            <div class="buttons" style="width: 29%">
+              <a href="#" class="basket-btn">В корзину</a>
+              <a href="#" class="read"
+                >Редактировать <img src="img/white-arr-right.svg" alt=""
+              /></a>
+              <div class="share">
+                <div class="share-btn">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.76923 7.38461C7.95231 7.38461 7.23923 7.81154 6.82892 8.4517L4.35739 7.03939C4.51708 6.72554 4.61539 6.37569 4.61539 6C4.61539 5.76785 4.57062 5.54815 4.50693 5.33676L7.07815 3.86769C7.49954 4.32462 8.09862 4.61538 8.76923 4.61538C10.044 4.61538 11.0769 3.58246 11.0769 2.30769C11.0769 1.03292 10.044 0 8.76923 0C7.49446 0 6.46154 1.03292 6.46154 2.30769C6.46154 2.53985 6.5063 2.75953 6.56999 2.97138L3.99877 4.44C3.57739 3.98354 2.97831 3.69231 2.30769 3.69231C1.03292 3.69231 0 4.72523 0 6C0 7.27477 1.03292 8.30769 2.30769 8.30769C2.83385 8.30769 3.31338 8.12491 3.70153 7.8286L6.48692 9.44309C6.47769 9.52616 6.46154 9.60646 6.46154 9.69231C6.46154 10.9671 7.49446 12 8.76923 12C10.044 12 11.0769 10.9671 11.0769 9.69231C11.0769 8.41754 10.044 7.38461 8.76923 7.38461Z"
+                    />
+                  </svg>
+                </div>
+                <div class="share-content">
+                  <p>Поделиться в социальных сетях</p>
+                  <a href="#">
+                    <img src="img/ic2.svg" alt="" />
+                    <span>Instagram</span>
+                  </a>
+                  <a href="#">
+                    <img src="img/ic3.svg" alt="" />
+                    <span>Youtube</span>
+                  </a>
+                </div>
               </div>
-              <a href="#" class="img">
-                <img src="img/goods-img4.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="goods-item">
-            <div class="img-wrap">
-              <div class="discount-green">new</div>
-              <a href="#" class="icon active">
-                <svg
-                  width="11"
-                  height="12"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.1164 1.51849H3.40506C2.36406 1.51849 1.51855 2.36889 1.51855 3.405V10.2912C1.51855 11.1709 2.14902 11.5424 2.92121 11.1172L5.3062 9.79271C5.56034 9.65098 5.97087 9.65098 6.22012 9.79271L8.60513 11.1172C9.37733 11.5473 10.0078 11.1758 10.0078 10.2912V3.405C10.0029 2.36889 9.1574 1.51849 8.1164 1.51849Z"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <div class="rate">
-                <img src="img/star.svg" alt="" />
-                <span>3.8</span>
-              </div>
-              <a href="#" class="img">
-                <img src="img/goods-img5.png" alt="" />
-              </a>
-            </div>
-            <p>Крем для лица Мастерикс <span>Косметика</span></p>
-            <div class="prices">
-              <span class="new-price">1100 ₸</span>
-              <span class="old-price">1321 ₸</span>
-            </div>
-            <div class="basket-btn-wrap">
-              <button type="button" class="basket-btn">В корзину</button>
-              <div class="product-count">
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" class="input-number" value="0" min="0" />
-                <button type="button" class="btn-plus">+</button>
-              </div>
+              <a href="#" class="delete"
+                ><img src="img/delete-icon.svg" alt=""
+              /></a>
             </div>
           </div>
         </div>
