@@ -1227,10 +1227,14 @@ input.error {
         }
       }
       .info-items {
+        @include flex;
+        @include dir-col;
         .info-item {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 10px;
+          margin-bottom: 10px;
+          overflow-y: auto;
           @media (max-width: 767px) {
             grid-template-columns: 1fr;
           }
@@ -1249,7 +1253,7 @@ input.error {
               cursor: pointer;
               transition: 0.3s;
               margin-bottom: 5px;
-              color: #000;
+              color: #2b2a29;
               img {
                 transform: rotate(-90deg);
                 @media (max-width: 767px) {
@@ -1265,15 +1269,15 @@ input.error {
             }
 
             &.div2 {
-              transform: scale(0);
+              display: none;
               &.show {
-                transform: scale(1);
+                display: block;
               }
             }
             &.div3 {
-              transform: scale(0);
+              display: none;
               &.show {
-                transform: scale(1);
+                display: block;
               }
             }
           }
