@@ -522,6 +522,30 @@
     </header>
 
     <div class="wrapper">
+      <div class="search-basket">
+        <form>
+          <button type="button">
+            <img src="img/search-icon.svg" alt="" />
+          </button>
+          <input type="text" placeholder="Поиск товаров по поставщикам..." />
+        </form>
+        <div class="hide-block">
+          <div class="item">
+            <div class="texts">
+              <span>Крем для лица Аврора 70 мл </span>
+              <b class="name">Имя поставщика</b>
+            </div>
+            <a href="#" class="add">Добавить</a>
+          </div>
+          <div class="item">
+            <div class="texts">
+              <span>Крем для лица Аврора 30 мл </span>
+              <b class="name">Имя поставщика</b>
+            </div>
+            <a href="#" class="add">Добавить</a>
+          </div>
+        </div>
+      </div>
       <div class="basket-wrap">
         <div class="left">
           <div class="basket-info">
@@ -555,7 +579,10 @@
                       <button type="button" class="btn-plus">+</button>
                     </div>
                     <div class="persent-wrap">
-                      <div class="persent">- 50%</div>
+                      <div class="persent wrap">
+                        <input type="text" maxlength="3" placeholder="50" />
+                        <span>%</span>
+                      </div>
                       <div class="red-text">с вашей прибыли покупателю</div>
                     </div>
                   </div>
@@ -597,7 +624,10 @@
                       <button type="button" class="btn-plus">+</button>
                     </div>
                     <div class="persent-wrap">
-                      <div class="persent">- 50%</div>
+                      <div class="persent wrap">
+                        <input type="text" maxlength="3" placeholder="500" />
+                        <span>%</span>
+                      </div>
                       <div class="red-text">с вашей прибыли покупателю</div>
                     </div>
                   </div>
@@ -639,7 +669,10 @@
                       <button type="button" class="btn-plus">+</button>
                     </div>
                     <div class="persent-wrap">
-                      <div class="persent">- 50%</div>
+                      <div class="persent wrap">
+                        <input type="text" maxlength="3" placeholder="50" />
+                        <span>%</span>
+                      </div>
                       <div class="red-text">с вашей прибыли покупателю</div>
                     </div>
                   </div>
@@ -681,7 +714,10 @@
                       <button type="button" class="btn-plus">+</button>
                     </div>
                     <div class="persent-wrap">
-                      <div class="persent">- 50%</div>
+                      <div class="persent wrap">
+                        <input type="text" maxlength="3" placeholder="50" />
+                        <span>%</span>
+                      </div>
                       <div class="red-text">с вашей прибыли покупателю</div>
                     </div>
                   </div>
@@ -731,7 +767,25 @@
               </div>
               <div class="info-input">
                 <p>Комментарий эксперта</p>
-                <input type="text" placeholder="Напишите..." />
+                <div class="tab-wrap">
+                  <span>Состав</span>
+                  <ul class="tab-menu">
+                    <li class="active"><button type="button">RUS</button></li>
+                    <li><button type="button">ENG</button></li>
+                    <li><button type="button">KAZ</button></li>
+                  </ul>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-content-item active">
+                    <textarea placeholder="Опишите состав товара "></textarea>
+                  </div>
+                  <div class="tab-content-item">
+                    <textarea placeholder="Опишите состав товара 2"></textarea>
+                  </div>
+                  <div class="tab-content-item">
+                    <textarea placeholder="Опишите состав товара 3"></textarea>
+                  </div>
+                </div>
               </div>
               <div class="total">
                 <p>Всего: <span class="count">2</span> товара</p>

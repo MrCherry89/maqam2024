@@ -394,6 +394,21 @@ $(document).ready(function () {
     $(this).closest(".search").find(".hide-block").toggleClass("show");
   });
 
+  $(".search-basket form input").on("input", function () {
+    $(this).closest(".search-basket").find(".hide-block").addClass("show");
+
+    // Проверяем, если поле пустое, убираем класс 'show'
+    if ($(this).val().length === 0) {
+      $(this).closest(".search-basket").find(".hide-block").removeClass("show");
+    }
+  });
+
+  $(".search-basket .hide-block .item .add").on("click", function () {
+    let inputText = $(this).closest(".item").find("span").text();
+    $(this).closest(".search-basket").find("form input").val(inputText);
+    $(this).closest(".search-basket").find(".hide-block").toggleClass("show");
+  });
+
   $("#categories-popup .info-item .div1 .top").on("click", function () {
     $(this).closest(".info-item").find(".div2").addClass("show");
     $(this).addClass("active");
@@ -401,5 +416,27 @@ $(document).ready(function () {
   $("#categories-popup .info-item .div2 .top").on("click", function () {
     $(this).closest(".info-item").find(".div3").addClass("show");
     $(this).addClass("active");
+  });
+  $(".cabinet-info2 .red-btn").on("click", function () {
+    $(this).closest(".cabinet-info2").find(".inputs").removeClass("hide");
+  });
+  $(".cabinet-info2 .add").on("click", function () {
+    $(this).closest(".cabinet-info2").find(".input2").removeClass("hide");
+  });
+
+  $(".input-wrapper .change-text").on("click", function () {
+    $(this).closest(".input-wrapper").find(".confirm").addClass("show");
+    $(this).hide();
+  });
+  $(".confirm-btn").on("click", function () {
+    $(this).closest(".confirm").find(".inputs").addClass("show");
+  });
+
+  $(".tab-menu li button").on("click", function () {
+    $(this).closest(".tab-menu").find("li").removeClass("active");
+    $(this).closest("li").addClass("active");
+    var index = $(this).closest("li").index();
+    $(".tab-content-item").removeClass("active");
+    $(".tab-content-item").eq(index).addClass("active");
   });
 });

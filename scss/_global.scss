@@ -126,6 +126,7 @@ a {
   background: #4ebb5f;
   border-radius: 5px;
   display: none;
+  position: relative;
   &.hide {
     display: none;
   }
@@ -153,6 +154,23 @@ a {
     padding: 0 5px;
     background: transparent;
     color: white;
+    font-size: 14px;
+    @include placeholder {
+      font-size: 14px;
+    }
+    margin-top: -8px;
+  }
+  .price {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 10px;
+    span {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
 
@@ -1287,6 +1305,73 @@ input.error {
   }
 }
 
+#add-popup {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  .popup-body {
+    width: 100%;
+    padding: 50px 70px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 6px;
+    position: relative;
+    z-index: 0;
+    @media (max-width: 767px) {
+      padding: 70px 20px 50px;
+    }
+    .mfp-close {
+      opacity: 1;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #2b2a29;
+      @include flex;
+      padding: 0;
+      margin: 0;
+      right: 20px;
+      top: 20px;
+      &:hover {
+        background: lighten(#2b2a29, 7%);
+      }
+      &:after {
+        content: "";
+        background: url(../img/close-popup.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .add-popup-form {
+      width: 100%;
+      input {
+        width: 100%;
+        height: 50px;
+        padding: 0 20px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      button {
+        border-radius: 5px;
+        background: #ea5448;
+        color: white;
+        @include flex;
+        @include align-center;
+        @include justify-center;
+        height: 50px;
+        width: 100%;
+      }
+    }
+  }
+}
+
 .switch {
   position: relative;
   @include inline-flex;
@@ -1355,4 +1440,46 @@ input.error {
 
 .switch.flat input:checked + .slider {
   background: #c4c4c4;
+}
+
+.tab-content {
+  .tab-content-item {
+    height: 0px;
+    overflow: hidden;
+    @include flex;
+
+    &.active {
+      height: auto;
+      overflow: visible;
+    }
+  }
+}
+
+.tab-wrap {
+  @include flex;
+  > span {
+    margin-right: 10px;
+    color: #959595;
+  }
+}
+
+.tab-menu {
+  @include flex;
+  margin-bottom: 10px;
+  li {
+    margin-right: 10px;
+    position: relative;
+
+    button {
+      color: #000;
+      font-size: 12px;
+      transition: 0s;
+    }
+
+    &.active {
+      button {
+        color: red;
+      }
+    }
+  }
 }

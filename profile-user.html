@@ -523,40 +523,33 @@
 
     <div class="cabinet-wrapper">
       <div class="wrapper">
-        <div class="top style2">
+        <div class="top">
           <div class="title-wrap">
             <h2>Кабинет</h2>
-            <span>/ эксперта</span>
+            <span>/ покупателя</span>
           </div>
           <div class="links">
             <a href="#" class="active">Данные</a>
-            <a href="#">Корзины</a>
-            <a href="#">Финансы</a>
-          </div>
-          <div class="balance">
-            Баланс: 345 ₸
-            <img src="img/down-white-arr.svg" alt="" />
+            <a href="#">Заказы</a>
+            <a href="#">Избранное</a>
+            <a href="#">Подписки</a>
           </div>
         </div>
         <div class="cabinet-info-wrap">
           <div class="cabinet-info1">
             <div class="info-wrap">
               <div class="top-info">
-                <div class="img-wrap visible">
-                  <img src="img/person-img.png" alt="" />
-                  <div class="icon">
-                    <img src="img/delete-icon.svg" alt="" />
-                  </div>
+                <div class="img-wrap">
+                  <img src="img/person-img1.png" alt="" />
                 </div>
                 <div class="name-info">
-                  <b class="name">Анна Кириенко</b>
-                  <div class="status status2">
+                  <b class="name">Александр Кириллов</b>
+                  <div class="status">
                     <span>Статус:</span>
                     <p>Покупатель</p>
-                    <div class="verified">Верифицирован через ИП</div>
                   </div>
                 </div>
-                <img src="img/expert-icon.svg" alt="" />
+                <img src="img/bas-icon.svg" alt="" />
               </div>
               <div class="input-wrapper">
                 <div class="input">
@@ -594,114 +587,46 @@
           <div class="cabinet-info2">
             <div class="title">
               <h2>Адресные данные</h2>
-              <span>Изменить адрес</span>
+              <span>Изменить адреса</span>
             </div>
             <div class="input-wrap">
-              <span>Город проживания</span>
-              <div class="select-wrap style3">
-                <img src="img/addr-icon.svg" alt="" class="icon" />
-                <select>
-                  <option value="1">г. Алматы</option>
-                  <option value="2">г. Москва</option>
-                  <option value="3">г. Атырау</option>
-                </select>
+              <span>Адрес по умолчанию</span>
+              <div class="input2">
+                <img src="img/address-icon-orange.svg" alt="" />
+                <input
+                  type="text"
+                  placeholder="Алматы, ул. Тверская, дом 35, кв. 13"
+                />
               </div>
             </div>
             <div class="input-wrap">
-              <span>Город проживания</span>
-              <input
-                type="text"
-                placeholder="ул. Тихомиревская, д. 75 корп. 2, кв. 15"
-              />
+              <span>Дополнительные адреса</span>
+              <div class="input2">
+                <img src="img/address-icon-orange.svg" alt="" />
+                <input
+                  type="text"
+                  placeholder="Алматы, ул. Тверская, дом 35, кв. 13"
+                />
+              </div>
+              <div class="input2 hide">
+                <img src="img/address-icon-orange.svg" alt="" />
+                <input
+                  type="text"
+                  placeholder="Алматы, ул. Тверская, дом 35, кв. 13"
+                />
+              </div>
             </div>
+            <button class="add save">добавить еще адрес</button>
           </div>
         </div>
-        <div class="expert-verification">
-          <div class="title-wrap">
-            <h3>Верификация эксперта</h3>
-            <span class="fill-details">Заполните все данные</span>
-            <a href="#" class="edit-data">Изменить данные</a>
+        <div class="become-expert-items">
+          <div class="become-expert-item">
+            <div class="info">
+              <span>Создавайте свои корзины и получайте прибыль</span>
+              <a href="#" class="white-btn">Хочу стать экспертом</a>
+            </div>
+            <img src="img/become-expert-img.png" alt="" />
           </div>
-          <form class="expert-verification-form">
-            <div class="left">
-              <div class="top-inputs">
-                <div class="input-wrap">
-                  <span>--</span>
-                  <div class="select-wrap style3">
-                    <select>
-                      <option value="1">ИП</option>
-                      <option value="2">ИП 2</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="input-wrap">
-                  <span></span>
-                  <input type="text" placeholder="Иванов Михаил Геннадьевич" />
-                </div>
-                <div class="input-wrap">
-                  <span>БИН</span>
-                  <input type="text" placeholder="БИН" />
-                </div>
-              </div>
-              <div class="legal-address">
-                <div class="legal-address-top">
-                  <span class="grey">Юридический адрес</span>
-                  <span class="green">Совпадает с адресом регистраии</span>
-                </div>
-                <div class="input-wrap">
-                  <input
-                    type="text"
-                    placeholder="ул. Тихомиревская, д. 75 корп. 2, кв. 15"
-                  />
-                </div>
-              </div>
-              <div class="bank-details">
-                <div class="input-wrap">
-                  <span>Банковский реквизиты</span>
-                  <input type="text" placeholder="Расчетный счет" />
-                </div>
-                <div class="inputs">
-                  <div class="input-wrap">
-                    <input type="text" placeholder="Наименование банка" />
-                  </div>
-                  <div class="input-wrap">
-                    <input type="text" placeholder="БИК" />
-                  </div>
-                </div>
-                <div class="input-wrap">
-                  <input type="text" placeholder="Номер счета" />
-                </div>
-              </div>
-              <div class="buttons">
-                <button class="send" type="button">
-                  Отправить на модерацию
-                  <img src="img/white-arr-right.svg" alt="" />
-                </button>
-                <a href="#" class="close">Отменить</a>
-              </div>
-            </div>
-            <div class="right">
-              <span class="title">Документы для загрузки</span>
-              <div class="files">
-                <div class="file-wrap">
-                  <img src="img/add-icon.svg" alt="" />
-                  <a href="#">Вариант ссылкой</a>
-                </div>
-                <div class="file-wrap">
-                  <input type="file" />
-                  <img src="img/add-icon.svg" alt="" />
-                  <span>Талон о регистрации ИП</span>
-                </div>
-              </div>
-              <div class="checkbox-wrap">
-                <label>
-                  <input type="checkbox" checked />
-                  <span></span>
-                  Являюсь налогоплательщиком НДС
-                </label>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
